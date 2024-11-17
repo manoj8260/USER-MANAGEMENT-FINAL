@@ -1,0 +1,19 @@
+{% extends 'user.html'%}
+{%block title%}
+user otp 
+{%endblock title%}
+
+{%block body%}
+<h1>welcome to otp page</h1>
+<form  method="post" class="login-form">
+    {%csrf_token%}
+    <div  class="input-field fp">
+        <label for="uotp">Enter otp: </label> 
+    <input type="text" name="uotp" id="uotp"> 
+
+    </div>
+    <div class="input-field fp">
+        <input type="submit" value="varify otp">
+    </div>
+</form>
+{%endblock body%}
